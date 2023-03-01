@@ -1,0 +1,67 @@
+= ivorysql-manual-docs
+
+Welcome to the ivorysql-docs project.
+
+This project containst the source files to build the docs.ivorysql.org site.
+The documentation is written ://docs.asciidoctor.org/[Asciidoc^] and published using the content management system link:https://docs.antora.org/antora/3.1/[Antora^], version 3.1.2.
+
+== Local Development
+Antora makes it easy to generate the site in your local environment.
+You need to clone this repository and perform the setup from this section.
+
+When you generate the site locally, you can check what your changes are going to look like before publishing them.
+
+This section describes how to carry out the following steps:
+
+* Installing Antora locally
+* Configuring a local
+* Running Antora to generate the site
+
+=== Installing Antora
+
+You can install Antora via an npm package.
+Before you can install npm packages, you need a Node.js release.
+
+For installation methods, refer to the link:https://docs.antora.org/antora/3.1/install/install-antora/[Antora Documentation].
+
+
+=== Configuring a local playbook
+Every Antora project has a playbook.
+The playbook is a set of configurations that determines how Antora compiles the documentation site.
+The configuration includes the locations of the content and the layout.
+It also what Asciidoc attributes to apply globally and any libraries that extend core functionality.
+
+The published website has two playbooks, one for the English part of the site and one for the Chinese:
+
+* `antora-playbook-en.yml`
+* `antora-playbook-cn.yml`
+
+You can use the playbooks as they are or modify them to suit your needs.
+For further information on the available configuration options, refer to the link:https://docs.antora.org/antora/3.1/playbook/set-up-playbook/[Antora documentation^].
+
+=== Running Antora
+
+With Antora installed and your playbooks configured, you can now generate the documentation locally.
+
+Each time you want to generate the documentation, carry out the following steps:
+
+. Open your command line.
+. Change directory to the ivory-doc-builder project.
+. Run the command `antora generate --to-dir ../demo antora-playbook-en.yml --stacktrace`
+. Run the command `antora generate --to-dir ../demo antora-playbook-cn.yml --stacktrace`
+
+=== multi language support
+By default, Antora doesn't support multilingual projects yet.
+This project uses a workaround solution to provide support in more than one language.
+The workaround consists of generating separate sites, one for each language.
+The sites are combined when uploading the files to the website hosting service.
+Finally, the root `index.hdes an entry point to the site from the base URL.
+
+Proper multilingual support is discussed in the link:https://gitlab.com/antora/antora/-/issues/208[Antora project on GitLab^].
+
+Refer project:
+https://github.com/plentymarkets/plenty-manual-docs
+
+
+
+
