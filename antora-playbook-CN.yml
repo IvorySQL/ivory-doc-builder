@@ -19,7 +19,7 @@ output:
   dir: ../docs/cn
 ui:
   bundle:
-    url: ./../ivory-doc-builder/cntemplates.zip
+    url: https://github.com/DutMsn/ivory-doc-builder/raw/main/cntemplates.zip
     snapshot: true
 runtime:
   fetch: true

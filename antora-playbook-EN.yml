@@ -19,7 +19,7 @@ output:
   dir: ../docs/en
 ui:
   bundle:
-    url: ./../ivory-doc-builder/entemplates.zip
+    url: https://github.com/DutMsn/ivory-doc-builder/raw/main/entemplates.zip
     snapshot: true
 runtime:
   fetch: true
