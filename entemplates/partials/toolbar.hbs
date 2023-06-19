@@ -1,0 +1,20 @@
+<div class="toolbar" role="navigation">
+{{> nav-toggle}}
+  {{#with site.homeUrl}}
+  <a href="{{{relativize this}}}" class="home-link{{#if @root.page.home}} is-current{{/if}}"></a>
+  {{/with}}
+{{> breadcrumbs}}
+{{!> page-versions}}
+  {{#if (and page.fileUri (not env.CI))}}
+  <div class="CN"><a href=""></a></div><div class="edit-this-page"><a href="{{page.fileUri}}">Edit this Page</a></div>
+  {{else if (and page.editUrl (or env.FORCE_SHOW_EDIT_PAGE_LINK (not page.origin.private)))}}
+  <div class="page-versions">
+  <button class="version-menu-toggle" title="switch to Chinese">EN</button>
+  <div class="version-menu">
+    <a class="version is-current" href="">EN</a>
+    <a class="version" href="../../../../cn{{page.url}}">CN</a>
+  </div>
+  </div>
+  <div class="edit-this-page"><a href="{{page.editUrl}}">Edit this Page</a></div>
+  {{/if}}
+</div>
