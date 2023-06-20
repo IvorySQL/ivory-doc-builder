@@ -1,0 +1,3 @@
+*entemplates* is used to store web page format related files of [IvorySQL Document Site](https://docs.ivorysql.org/en). This includes but is not limited to the images displayed on the webpage, the font of the webpage, and the links between the webpages. If you want to modify the layout of the webpage, please modify the corresponding file in the partials directory.
+
+**If you modify *entemplates.zip*, you should also upload the modified file to this directory for other contributors to check or review the modified content**

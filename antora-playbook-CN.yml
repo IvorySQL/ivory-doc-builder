@@ -1,12 +1,12 @@
 site:
-  title: IvorySQL Document Site
+  title: IvorySQL文档中心
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://docs.ivorysql.org
-  start_page: ivorysql-doc::v2.2/welcome.adoc
+  start_page: ivorysql-doc::Devs/welcome.adoc
 content:
   sources:
-  - url: https://github.com/IvorySQL/ivorysql_docs.git
-    branches: [v2.*,v1.*]
+  - url: git@github.com:IvorySQL/ivorysql_docs.git
+    branches: [v2.*,v1.*,developer]
     start_paths:
     - CN
 asciidoc:
@@ -19,7 +19,7 @@ output:
   dir: ../docs/cn
 ui:
   bundle:
-    url: https://github.com/DutMsn/ivory-doc-builder/raw/main/cntemplates.zip
+    url: https://github.com/IvorySQL/ivory-doc-builder/raw/main/cntemplates.zip
     snapshot: true
 runtime:
   fetch: true
