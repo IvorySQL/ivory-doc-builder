@@ -6,7 +6,7 @@ site:
 content:
   sources:
   - url: git@github.com:IvorySQL/ivorysql_docs.git
-    branches: [v2.*,v1.*,developer]
+    branches: [v3.*, v2.*,v1.*,developer]
     start_paths:
     - EN
 asciidoc:
