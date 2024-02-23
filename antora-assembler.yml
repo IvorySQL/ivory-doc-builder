@@ -1,0 +1,7 @@
+root_level: 0
+component_versions: '*'
+asciidoc:
+  attributes:
+    source-highlighter: rouge
+    pdf-theme: ./theme/cjk-theme.yml
+
