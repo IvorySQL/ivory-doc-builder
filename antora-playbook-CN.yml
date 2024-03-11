@@ -23,3 +23,8 @@ ui:
     snapshot: true
 runtime:
   fetch: true
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    languages: [en, zh]

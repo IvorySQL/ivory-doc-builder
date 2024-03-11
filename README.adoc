@@ -25,6 +25,11 @@ Before you can install npm packages, you need a Node.js release.
 For installation methods, refer to the link:https://docs.antora.org/antora/3.1/install/install-antora/[Antora Documentation].
 
 
+=== Installing Antora Lunr Extension
+
+Antora Lunr Extension is an Antora extension that integrates with Lunr to add offline, full-text search powered by Lunr to your Antora documentation site.
+For installation methods, refer to the link:https://gitlab.com/antora/antora-lunr-extension#user-content-installation[Antora Lunr Extension Installation]
+
 === Configuring a local playbook
 Every Antora project has a playbook.
 The playbook is a set of configurations that determines how Antora compiles the documentation site.
