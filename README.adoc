@@ -28,7 +28,14 @@ For installation methods, refer to the link:https://docs.antora.org/antora/3.1/i
 === Installing Antora Lunr Extension
 
 Antora Lunr Extension is an Antora extension that integrates with Lunr to add offline, full-text search powered by Lunr to your Antora documentation site.
-For installation methods, refer to the link:https://gitlab.com/antora/antora-lunr-extension#user-content-installation[Antora Lunr Extension Installation]
+For installation methods, refer to the link:https://gitlab.com/antora/antora-lunr-extension#user-content-installation[Antora Lunr Extension Installation].
+
+=== Installing Antora Assembler Extension
+The purpose of the Antora Assembler project is to provide a means of aggregating and exporting content in an Antora site to PDF and other formats in such a way that all references within the Antora coordinate system are preserved.
+For installation methods, refer to the link:https://gitlab.com/antora/antora-assembler#install-pdf-extension[Antora Assembler Extension Installation].
+For pdf theme configuration, refer to the link:https://docs.asciidoctor.org/pdf-converter/latest/theme[Asciidoctor PDF Theming].
+The folder theme saved CJK theme & TTF fonts for CN, refer to the link: https://docs.asciidoctor.org/pdf-converter/latest/theme/cjk[Create a CJK Theme].
+When you create pdf in local, please modify cjk-theme.yml.
 
 === Configuring a local playbook
 Every Antora project has a playbook.

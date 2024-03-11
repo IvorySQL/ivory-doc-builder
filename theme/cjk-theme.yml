@@ -1,0 +1,17 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    Noto Sans CN: /root/docs/ivory-doc-builder/theme/NotoSansCJKsc-VF.ttf
+    Noto Sans Mono CN: /root/docs/ivory-doc-builder/theme/NotoSansMonoCJKsc-VF.ttf
+  fallbacks:
+  - Noto Serif
+base:
+  text-align: left
+  font-family: Noto Sans CN
+codespan:
+  font-family: Noto Sans Mono CN
+kbd:
+  font-family: $codespan-font-family
+code:
+  font-family: $codespan-font-family
