@@ -2,7 +2,7 @@ site:
   title: IvorySQL Document Site
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://docs.ivorysql.org
-  start_page: ivorysql-doc::v3.2/welcome.adoc
+  start_page: ivorysql-doc::v3.3/welcome.adoc
 content:
   sources:
   - url: git@github.com:IvorySQL/ivorysql_docs.git
