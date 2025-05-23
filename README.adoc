@@ -1,11 +1,24 @@
 = ivorysql-manual-docs
 
-Welcome to the ivorysql-docs project.
+Welcome to the ivorysql-docs-builder project.
 
-This project containst the source files to build the docs.ivorysql.org site.
-The documentation is written ://docs.asciidoctor.org/[Asciidoc^] and published using the content management system link:https://docs.antora.org/antora/3.1/[Antora^], version 3.1.2.
+This project containst the builder environment to build the docs.ivorysql.org site.
 
-== Local Development
+== Quick Start
+
+To build the docs, you need to have Node.js installed.
+To get started, you can use the following steps:
+```
+# Install Ruby and gem
+# Install Asciidoctor PDF and related Gems
+gem install asciidoctor-pdf --version "~>2.3.19"
+gem install rouge
+cd ivory-doc-builder # Change directory to the ivory-doc-builder project.
+npm install #  npm install antora@3.1.7  @antora/lunr-extension  @antora/pdf-extension  @node-rs/jieba
+npm build:all
+```
+
+== Local Development Step by Step
 Antora makes it easy to generate the site in your local environment.
 You need to clone this repository and perform the setup from this section.
 
