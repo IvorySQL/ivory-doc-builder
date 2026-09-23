@@ -9,13 +9,13 @@ This project containst the builder environment to build the docs.ivorysql.org si
 To build the docs, you need to have Node.js installed.
 To get started, you can use the following steps:
 ```
-# Install Ruby and gem
-# Install Asciidoctor PDF and related Gems
-gem install asciidoctor-pdf --version "~>2.3.19"
-gem install rouge
+# Install Ruby and gem
+# Install Asciidoctor PDF and related Gems
+gem install asciidoctor-pdf --version "~>2.3.19"
+gem install rouge
 cd ivory-doc-builder # Change directory to the ivory-doc-builder project.
-npm install #  npm install antora@3.1.7  @antora/lunr-extension  @antora/pdf-extension  @node-rs/jieba
-npm build:all
+npm install #  npm install antora@3.1.7  @antora/lunr-extension  @antora/pdf-extension  @node-rs/jieba
+npm run build:all
 ```
 
 == Local Development Step by Step
@@ -58,8 +58,8 @@ It also what Asciidoc attributes to apply globally and any libraries that extend
 
 The published website has two playbooks, one for the English part of the site and one for the Chinese:
 
-* `antora-playbook-en.yml`
-* `antora-playbook-cn.yml`
+* `antora-playbook-EN.yml`
+* `antora-playbook-CN.yml`
 
 You can use the playbooks as they are or modify them to suit your needs.
 For further information on the available configuration options, refer to the link:https://docs.antora.org/antora/3.1/playbook/set-up-playbook/[Antora documentation^].
@@ -72,8 +72,8 @@ Each time you want to generate the documentation, carry out the following steps:
 
 . Open your command line.
 . Change directory to the ivory-doc-builder project.
-. Run the command `antora generate --to-dir ../demo antora-playbook-en.yml --stacktrace`
-. Run the command `antora generate --to-dir ../demo antora-playbook-cn.yml --stacktrace`
+. Run the command `npx antora generate --to-dir ../demo antora-playbook-EN.yml --stacktrace`
+. Run the command `npx antora generate --to-dir ../demo antora-playbook-CN.yml --stacktrace`
 
 === multi language support
 By default, Antora doesn't support multilingual projects yet.
